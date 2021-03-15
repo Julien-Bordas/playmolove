@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/geoloc"
+        android:title="@string/geo_loc"
+        android:icon="@drawable/world"
+        />
+
+    <item
+        android:id="@+id/chat"
+        android:title="@string/messagerie"
+        android:icon="@drawable/message"
+        />
+
+    <item
+        android:id="@+id/find"
+        android:title="@string/trouver"
+        android:icon="@drawable/find"
+        />
+
+    <item
+        android:id="@+id/profil"
+        android:title="@string/profil"
+        android:icon="@mipmap/ic_launcher"
+        />
+
+</menu>

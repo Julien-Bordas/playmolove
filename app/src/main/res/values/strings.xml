@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">playmolove</string>
+    <string name="password_oublie"><u>Mot de passe oublié?</u></string>
+    <string name="accueil">Accueil</string>
+    <string name="messagerie">Messagerie</string>
+    <string name="trouver">Trouver</string>
+    <string name="profil">Profil</string>
+    <string name="reglage">Réglages</string>
+    <string name="geo_loc">Géolocalisation</string>
+    <string name="termine">Terminé</string>
+</resources>
