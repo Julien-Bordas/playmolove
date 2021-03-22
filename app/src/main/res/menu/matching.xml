@@ -2,4 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+
+    <item
+        android:id="@+id/bio"
+        android:title=""
+        android:icon="@drawable/bio"
+        />
+
+    <item
+        android:id="@+id/delete"
+        android:title=""
+        android:icon="@drawable/cross"
+        />
+
+    <item
+        android:id="@+id/accept"
+        android:title=""
+        android:icon="@drawable/check"
+        />
+
+    <item
+        android:id="@+id/coup_de_coeur"
+        android:title=""
+        android:icon="@drawable/coeur"
+        />
+
 </menu>

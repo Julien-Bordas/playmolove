@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/geoloc"
-        android:title="@string/geo_loc"
+        android:title=""
         android:icon="@drawable/world"
         />
 
@@ -22,7 +22,7 @@
     <item
         android:id="@+id/profil"
         android:title="@string/profil"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/user"
         />
 
 </menu>
