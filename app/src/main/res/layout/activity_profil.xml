@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ProfilActivity">
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bot_nav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="56dp"
         android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bot_navigation" />
+        app:menu="@menu/bot_navigation"
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_nav"
@@ -24,6 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/top_navigation" />
+
 
     <ImageView
         android:id="@+id/photo"
