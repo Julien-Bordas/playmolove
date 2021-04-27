@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="@dimen/large"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaut"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_choice"
+        android:layout_marginBottom="@dimen/defaut">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/hetero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hetero" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/gay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homo"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lesbienne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lesbi"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/bisexuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bi"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/asexuel"
+                android:text="@string/as"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/demisexuel"
+                android:text="@string/demi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pansexuel"
+                android:text="@string/pans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/queer"
+                android:text="@string/queer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/questionnement"
+                android:text="@string/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/pref_sexe"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/photosize"
+        android:text="@string/orientation"
+        android:textStyle="bold"
+        android:textSize="@dimen/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/defaut"/>
+
+    <TextView
+        android:id="@+id/max_choice"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/info"
+        android:text="@string/max_choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pref_sexe"
+        android:layout_marginTop="@dimen/moitie"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginTop="@dimen/defaut"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/defaut"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

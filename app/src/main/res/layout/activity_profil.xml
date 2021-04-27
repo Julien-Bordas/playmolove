@@ -6,6 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".ProfilActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        android:layout_marginTop="@dimen/low"
+        app:layout_constraintBottom_toTopOf="@+id/bot_nav"
+        app:layout_constraintTop_toBottomOf="@+id/ajouter_photo"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="@dimen/photosize"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bot_nav"
         android:layout_width="413dp"
@@ -16,6 +129,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bot_navigation"
         />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_nav"
@@ -57,7 +171,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
-
+    <TextView
+        android:id="@+id/ajouter_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter des photos"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/low"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

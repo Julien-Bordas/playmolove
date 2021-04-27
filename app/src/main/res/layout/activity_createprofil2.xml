@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/photosize"
+        android:text="@string/birthday_info"
+        android:textSize="@dimen/info"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/defaut"/>
+
+    <EditText
+        android:id="@+id/edit_birthday"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginTop="@dimen/defaut"
+        android:autofillHints=""
+        android:hint="@string/birthday"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday" />
+
+    <TextView
+        android:id="@+id/birthday_info"
+        android:layout_width="@dimen/wide"
+        android:layout_height="wrap_content"
+        android:text="@string/birthday_warning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_birthday" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginBottom="@dimen/defaut"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

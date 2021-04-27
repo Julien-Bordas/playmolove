@@ -3,4 +3,10 @@
     <dimen name="defaut">50dp</dimen>
     <dimen name="low">10dp</dimen>
     <dimen name="mini">5dp</dimen>
+    <dimen name="photosize">135dp</dimen>
+    <dimen name="wide">200dp</dimen>
+    <dimen name="next_height">55dp</dimen>
+    <dimen name="info">35sp</dimen>
+    <dimen name="moitie">25dp</dimen>
+    <dimen name="large">250sp</dimen>
 </resources>
