@@ -9,4 +9,5 @@
     <dimen name="info">35sp</dimen>
     <dimen name="moitie">25dp</dimen>
     <dimen name="large">250sp</dimen>
+    <dimen name="hint">15sp</dimen>
 </resources>

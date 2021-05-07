@@ -15,8 +15,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/reglage_navigation"
-        android:paddingLeft="@dimen/defaut"
-        />
+        android:paddingStart="@dimen/defaut"
+        tools:ignore="RtlSymmetry" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/terminer"
@@ -48,7 +48,7 @@
                     android:id="@+id/outils"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Réglages"
+                    android:text="@string/reglage"
                     android:layout_marginTop="@dimen/defaut"
                     android:layout_marginBottom="@dimen/defaut"
                     android:textStyle="bold"
@@ -65,7 +65,7 @@
                     android:id="@+id/phone_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Numéro de téléphone: "
+                    android:text="@string/tel"
                     android:textStyle="bold"
                     />
 
@@ -74,10 +74,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number"
-                    android:hint="0000000"
+                    android:inputType="phone|number"
+                    android:hint="@string/zero"
                     android:background="@android:color/transparent"
-                    />
+                    android:autofillHints="" />
             </TableRow>
 
             <TableRow
@@ -89,7 +89,7 @@
                     android:id="@+id/change_password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Modfier mot de passe"
+                    android:text="@string/modifier_mdp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -98,9 +98,10 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:ems="10"
-                    android:hint="Entrez votre nouveau mot de passe"
-                    android:inputType="textPersonName"
-                    android:textSize="14dp"
+                    android:hint="@string/nouveau_mdp"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/hint"
+                    android:autofillHints=""
                     />
 
             </TableRow>
@@ -111,44 +112,23 @@
                 android:layout_marginTop="@dimen/mini">
 
                 <TextView
-                    android:id=""
+                    android:id="@+id/adresse_mail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="@string/adresse"
                     android:textStyle="bold"
                     />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                    android:id="@+id/adresse_mail_w"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
-                    android:background="@android:color/transparent"/>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textStyle="bold"
-                    />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
+                    android:inputType="textEmailAddress"
+                    android:text="@string/une_adresse"
+                    android:textColor="@color/red"
                     android:background="@android:color/transparent"
-                    />
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
             </TableRow>
 
             <TableRow
@@ -156,22 +136,39 @@
                 android:layout_height="match_parent" >
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/decouverte"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="@string/decouverte"
+                    android:layout_marginTop="@dimen/defaut"
+                    android:layout_marginBottom="@dimen/defaut"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/emplacement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emplacement"
                     android:textStyle="bold"
                     />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                    android:id="@+id/emplacement_w"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name"
+                    android:text="@string/emplacement_actuel"
                     android:background="@android:color/transparent"
-                    />
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
             </TableRow>
 
             <TableRow
@@ -179,21 +176,21 @@
                 android:layout_height="match_parent" >
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/tranche_age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="@string/tranche_age"
                     android:textStyle="bold"
                     />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                <TextView
+                    android:id="@+id/choix_age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
-                    android:background="@android:color/transparent"/>
+                    android:text="@string/choix_age"
+                    android:textColor="@color/black"
+                    />
+
             </TableRow>
 
             <TableRow
@@ -201,22 +198,22 @@
                 android:layout_height="match_parent" >
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/distance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="@string/distance"
                     android:textStyle="bold"
                     />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                <TextView
+                    android:id="@+id/distance_choisi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
-                    android:background="@android:color/transparent"
+                    android:text="@string/distance_choisi"
+                    android:textStyle="bold"
                     />
+
+
             </TableRow>
 
             <TableRow
@@ -224,70 +221,16 @@
                 android:layout_height="match_parent" >
 
                 <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textStyle="bold"
                     />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                <SeekBar
+                    android:id="@+id/choix_distance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
-                    android:background="@android:color/transparent"
-                    />
+                    android:progress="50"/>
+
             </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textStyle="bold"
-                    />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
-                    android:background="@android:color/transparent"
-                    />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textStyle="bold"
-                    />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name"
-                    android:background="@android:color/transparent"
-                    />
-            </TableRow>
-
+            
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

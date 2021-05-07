@@ -1,6 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">playmolove</string>
 
+    <string name="tel">Numéro de téléphone : </string>
+    <string name="zero">00000000</string>
+    <string name="modifier_mdp">Modifier mot de passe</string>
+    <string name="nouveau_mdp">Entrez votre nouveau mod de passe</string>
+    <string name="adresse">Adresse e-mail</string>
+    <string name="decouverte">Découverte</string>
+    <string name="une_adresse">jack.rg@hotmail.fr</string>
+    <string name="emplacement">Emplacement</string>
+    <string name="emplacement_actuel">Bordeaux, Aquitaine</string>
+    <string name="tranche_age" tools:ignore="StringEscaping">Tranche d'âge</string>
+    <string name="choix_age">18-30</string>
+    <string name="distance">Distance maximale</string>
+    <string name="distance_choisi">50 km</string>
+
+
+
+
     <string name="password_oublie"><u>Mot de passe oublié?</u></string>
     <string name="accueil">Accueil</string>
     <string name="messagerie">Messagerie</string>

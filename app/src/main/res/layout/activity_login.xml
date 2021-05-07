@@ -10,7 +10,7 @@
 
     <EditText
         android:id="@+id/identifiant"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/large"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaut"
         android:ems="10"
@@ -22,7 +22,7 @@
 
     <EditText
         android:id="@+id/mdp"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/large"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaut"
         android:ems="10"
@@ -46,10 +46,11 @@
         android:id="@+id/inscrire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/low"
         android:text="@string/signup"
-        app:layout_constraintEnd_toEndOf="@+id/mdp"
-        app:layout_constraintTop_toBottomOf="@+id/mdp"
-        android:layout_marginTop="@dimen/low"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/connexion"
+        app:layout_constraintTop_toBottomOf="@+id/mdp" />
 
     <ImageView
         android:id="@+id/logo"
