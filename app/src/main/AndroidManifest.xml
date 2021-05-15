@@ -2,10 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.playmolove">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Playmolove">
@@ -13,18 +17,21 @@
         <activity android:name=".MatchingActivity" />
         <activity android:name=".ReglageActivity" />
         <activity android:name=".ProfilActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".MessagerieActivity" />
-        <activity android:name=".loginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ChatMessage" />
         <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".loginActivity"
+            android:label="Playmolove">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCD_qq2V0pZ8VjR7B_2fDiMymEUNi1RwxI" />
     </application>
 
 </manifest>

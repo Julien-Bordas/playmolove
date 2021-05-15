@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bot_nav"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/BottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bot_navigation" />
+        app:menu="@menu/bottom_navigation_view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

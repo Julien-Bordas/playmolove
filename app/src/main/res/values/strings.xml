@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">playmolove</string>
-    <string name="password_oublie"><u>Mot de passe oublié?</u></string>
+    <string name="app_name">Playmolove</string>
+    <string name="password_oublie"><u>Mot de passe oublié ?</u></string>
+    <string name="inscription">Inscription</string>
     <string name="accueil">Accueil</string>
     <string name="messagerie">Messagerie</string>
     <string name="trouver">Trouver</string>
