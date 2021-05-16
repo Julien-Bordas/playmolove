@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.geoloc:
-                Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Chargement de la localisation", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(this, GeolocActivity.class));
                 return true;
             case R.id.chat:
-                Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Chargement des messages", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(this, MessagerieActivity.class));
                 return true;
             case R.id.find:
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             case R.id.profil:
                 Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, ProfilActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuitem) {
         switch (menuitem.getItemId()) {
             case R.id.geoloc:
-                Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Chargement de la localisation", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(this, GeolocActivity.class));
                 return true;
             case R.id.chat:
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             case R.id.profil:
                 Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, ProfilActivity.class));
                 return true;
         }
         return false;

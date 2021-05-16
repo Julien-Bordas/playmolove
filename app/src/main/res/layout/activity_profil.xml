@@ -6,29 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ProfilActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/wide"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/love"
+        android:text="@string/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bot_nav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="56dp"
         android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_view" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/top_nav"
-        android:layout_width="57dp"
-        android:layout_height="72dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/top_navigation" />
+        app:menu="@menu/bot_navigation"
+        />
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="232dp"
-        android:layout_height="221dp"
+        android:layout_width="219dp"
+        android:layout_height="204dp"
         android:layout_marginTop="90dp"
         android:foreground="@drawable/rounded_corners"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +39,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_nav"
+        android:layout_width="57dp"
+        android:layout_height="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/reglage_icon_navigation" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
-        android:text="Jack, 21 ans"
+        android:text="@string/nameandage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/photo" />
@@ -51,11 +62,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/low"
-        android:text="ESME"
+        android:text="@string/scolarite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
-
 
 
 

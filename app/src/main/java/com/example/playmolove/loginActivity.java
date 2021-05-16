@@ -60,7 +60,14 @@ public class loginActivity extends AppCompatActivity {
                                         @Override
                                         public void onComplete(@NonNull Task<AuthResult> task) {
                                             if (task.isSuccessful()) {
-                                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                                boolean isNew = task.getResult().getAdditionalUserInfo().isNewUser();
+                                                if (isNew) {
+                                                    Intent intent = new Intent(getApplicationContext(), CreateProfilActivity.class);
+                                                    loginActivity.this.startActivity(intent);
+                                                }
+                                                else {
+                                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                                }
                                             } else {
                                                 Toast.makeText(loginActivity.this, "Login raté ou utilisateur inconnu", Toast.LENGTH_SHORT).show();
 

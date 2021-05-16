@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/love"
         android:text="Connexion"
         app:layout_constraintStart_toStartOf="@+id/password2"
         app:layout_constraintTop_toBottomOf="@+id/password2" />

@@ -9,7 +9,17 @@
 
     <fragment
         android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="417dp"
+        android:layout_height="674dp"
+        tools:layout_editor_absoluteX="-6dp"></fragment>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bot_nav"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></fragment>
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

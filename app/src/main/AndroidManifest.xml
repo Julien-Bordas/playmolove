@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.playmolove">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> //avoir une localisation précise par GPS
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> //avoir une localisation approximative par satelite
 
     <application
         android:allowBackup="true"
@@ -29,6 +29,9 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- test -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCD_qq2V0pZ8VjR7B_2fDiMymEUNi1RwxI" />

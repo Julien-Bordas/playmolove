@@ -1,12 +1,98 @@
 <resources>
     <string name="app_name">Playmolove</string>
-    <string name="password_oublie"><u>Mot de passe oublié ?</u></string>
+
+    <!-- activity_register -->
     <string name="inscription">Inscription</string>
+    <!--
+     activity_createprofil
+    -->
+    <string name="my_name">Je m appelle</string>
+    <string name="first_name">Prénom</string>
+    <string name="name_warning">Attention, tu ne pourras plus le changer après.</string>
+
+    <string name="birthday_info">Mon anniversaire est le</string>
+    <string name="birthday">DD/MM/YYYY</string>
+    <string name="birthday_warning">Tout le monde peut voir ton âge.</string>
+
+    <string name="sexe_profil">Je suis un…</string>
+    <string name="man">HOMME</string>
+    <string name="woman">FEMME</string>
+    <string name="other">AUTRE</string>
+    <string name="genre">Afficher mon genre sur mon profil</string>
+
+    <string name="orientation">Mon orientation sexuelle :</string>
+    <string name="max_choice">Tu peux en choisir jusqu à 3</string>
+    <string name="hetero">Hétérosexuel(le)</string>
+    <string name="bi">Bisexuel(le)</string>
+    <string name="as">Asexuel(le)</string>
+    <string name="homo">Gay</string>
+    <string name="lesbi">Lesbienne</string>
+    <string name="demi">Demisexuel(le))</string>
+    <string name="pans">Pansexuel(le)</string>
+    <string name="queer">Queer</string>
+    <string name="question">En questionnement</string>
+
+    <string name="taste">Je cherche un…</string>
+    <string name="tout">Tout</string>
+
+    <string name="scolarite">J ai effectué ma scolarité à</string>
+    <string name="etablissement">Nom de l établissement</string>
+
+    <string name="termine">Terminé</string>
+    <string name="next">Continuer</string>
+
+    <!--
+        activity_login
+    -->
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="signup">S inscrire</string>
+    <string name="password_oublie"><u>Mot de passe oublié?</u></string>
+    <string name="bienvenue">Bienvenue sur Playmolove !</string>
+    <string name="copyright">Copyright 2021 J. Bordas, C. Cronier, A. Fen-Chong </string>
+    <!--
+        activity_reglage
+    -->
+    <string name="reglage">Réglages</string>
+    <string name="tel">Numéro de téléphone : </string>
+    <string name="zero">00000000</string>
+
+    <string name="modifier_mdp">Modifier mot de passe</string>
+    <string name="nouveau_mdp">Entrez votre nouveau mod de passe</string>
+
+    <string name="decouverte">Découverte</string>
+    <string name="adresse">Adresse e-mail</string>
+    <string name="une_adresse">jack.rg@hotmail.fr</string>
+
+    <string name="emplacement">Emplacement</string>
+    <string name="emplacement_actuel">Bordeaux, Aquitaine</string>
+
+    <string name="tranche_age">Tranche d âge</string>
+    <string name="choix_age">18–30</string>
+
+    <string name="distance">Distance maximale</string>
+    <string name="distance_choisi">50 km</string>
+
+    <string name="security">Mentions légales</string>
+    <string name="confidentialite">Politique dde confidentialité</string>
+    <string name="license">license</string>
+    <string name="utilisation">Conditions d utilisation</string>
+
+    <!--
+    bot_navigation
+    -->
     <string name="accueil">Accueil</string>
     <string name="messagerie">Messagerie</string>
     <string name="trouver">Trouver</string>
     <string name="profil">Profil</string>
-    <string name="reglage">Réglages</string>
     <string name="geo_loc">Géolocalisation</string>
-    <string name="termine">Terminé</string>
+
+    <!--
+    profil
+    -->
+    <string name="nameandage">Nom, age ans</string>
+    <string name="addphoto">Ajouter des photos</string>
+    <string name="camera">Appuyez ici pour vous prendre en photo</string>
+
 </resources>

@@ -1,6 +1,7 @@
 package com.example.playmolove;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -21,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText email;
     private EditText password;
     private Button register;
+    private Button retour;
     private FirebaseAuth auth;
 
     @Override
@@ -30,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         email = findViewById(R.id.email2);
         password = findViewById(R.id.password2);
         register = findViewById(R.id.register2);
+        retour = findViewById(R.id.retour);
         auth = FirebaseAuth.getInstance();
 
         register.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +48,14 @@ public class RegisterActivity extends AppCompatActivity {
                 } else {
                     registerUser(text_email, txt_password);
                 }
+            }
+        });
+
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this , loginActivity.class));
+                finish();
             }
         });
     }

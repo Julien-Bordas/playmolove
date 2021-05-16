@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/quitter"
+        android:layout_width="99dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/quitter_navigation" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:textStyle="bold"
+        android:textSize="@dimen/info"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/photosize"
+        android:layout_marginTop="@dimen/cent"
+        android:text="@string/my_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginTop="@dimen/defaut"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/name_info"
+        android:layout_width="@dimen/wide"
+        android:layout_height="wrap_content"
+        android:text="@string/name_warning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="@dimen/defaut"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
