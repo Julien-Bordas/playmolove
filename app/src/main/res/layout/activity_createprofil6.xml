@@ -14,13 +14,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/cent"/>
+=======
+        android:layout_marginTop="@dimen/defaut"/>
+>>>>>>> origin/master
 
     <EditText
         android:id="@+id/etablissement"
         android:layout_width="@dimen/wide"
         android:layout_height="@dimen/defaut"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/defaut"
+=======
+        android:layout_marginTop="@dimen/low"
+>>>>>>> origin/master
         android:autofillHints=""
         android:hint="@string/etablissement"
         android:inputType="text"
@@ -29,6 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/job" />
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/termine"
         android:layout_width="@dimen/wide"
         android:layout_height="@dimen/next_height"
@@ -38,5 +47,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
+=======
+        android:id="@+id/next"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginBottom="@dimen/defaut"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+>>>>>>> origin/master
 
 </androidx.constraintlayout.widget.ConstraintLayout>

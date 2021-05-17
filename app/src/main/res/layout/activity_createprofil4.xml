@@ -87,7 +87,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/cent"/>
+=======
+        android:layout_marginTop="@dimen/defaut"/>
+>>>>>>> origin/master
 
     <TextView
         android:id="@+id/max_choice"
@@ -108,8 +112,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+<<<<<<< HEAD
         android:layout_marginBottom="@dimen/defaut"
         />
+=======
+        android:layout_marginBottom="@dimen/defaut"/>
+>>>>>>> origin/master
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

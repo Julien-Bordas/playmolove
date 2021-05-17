@@ -8,94 +8,79 @@
     android:layout_height="match_parent"
     tools:ignore="ExtraText">
 
+    <EditText
+        android:id="@+id/identifiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaut"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Identifiant"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaut"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/identifiant"
+        app:layout_constraintStart_toStartOf="@+id/identifiant"
+        app:layout_constraintTop_toBottomOf="@+id/identifiant"
+        />
+
+    <Button
+        android:id="@+id/connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        app:layout_constraintStart_toStartOf="@+id/mdp"
+        app:layout_constraintTop_toBottomOf="@+id/mdp"
+        android:layout_marginTop="@dimen/low"/>
+
+    <Button
+        android:id="@+id/inscrire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="@+id/mdp"
+        app:layout_constraintTop_toBottomOf="@+id/mdp"
+        android:layout_marginTop="@dimen/low"/>
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="281dp"
         android:layout_height="204dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <EditText
-        android:id="@+id/email2"
-        android:layout_width="274dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="email"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/logo"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <TextView
-        android:id="@+id/mdp_oublie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginEnd="148dp"
-        android:text="@string/password_oublie"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.305" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/love"
-        android:text="Connexion"
-        app:layout_constraintStart_toStartOf="@+id/password2"
-        app:layout_constraintTop_toBottomOf="@+id/password2" />
-
-    <Button
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="S'inscrire"
-        app:layout_constraintEnd_toEndOf="@+id/password2"
-        app:layout_constraintTop_toBottomOf="@+id/password2" />
-
-    <EditText
-        android:id="@+id/password2"
-        android:layout_width="280dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Mot de passe"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/email2"
-        app:layout_constraintStart_toStartOf="@+id/email2"
-        app:layout_constraintTop_toBottomOf="@+id/email2" />
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/low"/>
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="211dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="12dp"
-        android:text="Bienvenue sur Playmolove !"
+        android:layout_width="172dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/low"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:textSize="32sp"
+        android:textAllCaps="true"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="195dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="31dp"
-        android:text="Copyright 2021 J. Bordas, C. Cronier, A. Fen-Chong "
-        android:textAlignment="center"
-        android:textSize="6sp"
-        android:textStyle="bold"
+        android:id="@+id/mdp_oublie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/low"
+        android:text="@string/password_oublie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mdp_oublie" />
+        app:layout_constraintStart_toStartOf="@+id/inscrire"
+        app:layout_constraintTop_toBottomOf="@+id/inscrire" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

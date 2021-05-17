@@ -14,7 +14,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/cent"/>
+=======
+        android:layout_marginTop="@dimen/defaut"/>
+>>>>>>> origin/master
 
     <EditText
         android:id="@+id/edit_birthday"

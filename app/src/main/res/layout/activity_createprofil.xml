@@ -5,13 +5,29 @@
     android:layout_height="match_parent">
 
 
+<<<<<<< HEAD
+=======
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/quitter"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/quitter_navigation" />
+
+
+>>>>>>> origin/master
     <TextView
         android:id="@+id/name"
         android:textStyle="bold"
         android:textSize="@dimen/info"
         android:layout_width="@dimen/wide"
         android:layout_height="@dimen/photosize"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/cent"
+=======
+        android:layout_marginTop="@dimen/defaut"
+>>>>>>> origin/master
         android:text="@string/my_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +37,11 @@
         android:id="@+id/edit_name"
         android:layout_width="@dimen/wide"
         android:layout_height="@dimen/next_height"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/defaut"
+=======
+        android:layout_marginTop="@dimen/low"
+>>>>>>> origin/master
         android:hint="@string/first_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +60,7 @@
 
     <Button
         android:id="@+id/next"
+<<<<<<< HEAD
         android:layout_width="42dp"
         android:layout_height="45dp"
         android:layout_marginBottom="@dimen/defaut"
@@ -47,6 +68,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+=======
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginBottom="@dimen/defaut"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+>>>>>>> origin/master
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

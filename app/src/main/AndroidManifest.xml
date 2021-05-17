@@ -2,14 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.playmolove">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> //avoir une localisation précise par GPS
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> //avoir une localisation approximative par satelite
-
     <application
         android:allowBackup="true"
-         android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Playmolove">
@@ -17,30 +13,18 @@
         <activity android:name=".MatchingActivity" />
         <activity android:name=".ReglageActivity" />
         <activity android:name=".ProfilActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".MessagerieActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".CreateProfilActivity" />
-        <activity android:name=".CreateprofilActivity2" />
-        <activity android:name=".CreateProfilActivity3" />
-        <activity android:name=".CreateProfilActivity4" />
-        <activity android:name=".CreateProfilActivity5" />
-        <activity android:name=".CreateProfilActivity6" />
-        <activity android:name=".ChatMessage" />
+        <activity android:name=".loginActivity" />
         <activity
-            android:name=".loginActivity"
-            android:label="Playmolove">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" /> <!-- test -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCD_qq2V0pZ8VjR7B_2fDiMymEUNi1RwxI" />
     </application>
 
 </manifest>

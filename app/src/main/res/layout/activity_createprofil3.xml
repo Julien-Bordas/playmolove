@@ -20,15 +20,23 @@
             android:text="@string/woman"
             android:textAlignment="center"
             android:layout_width="@dimen/large"
+<<<<<<< HEAD
             android:layout_height="@dimen/next_height"
             />
+=======
+            android:layout_height="@dimen/next_height" />
+>>>>>>> origin/master
 
         <com.google.android.material.chip.Chip
             android:id="@+id/man"
             android:text="@string/man"
             android:textAlignment="center"
             android:layout_width="@dimen/large"
+<<<<<<< HEAD
             android:layout_height="@dimen/next_height"/>
+=======
+            android:layout_height="@dimen/next_height" />
+>>>>>>> origin/master
 
         <com.google.android.material.chip.Chip
             android:id="@+id/other"
@@ -48,8 +56,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/cent"
         />
+=======
+        android:layout_marginTop="@dimen/defaut"/>
+>>>>>>> origin/master
 
     <CheckBox
         android:id="@+id/check_sexe"
@@ -70,8 +82,12 @@
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         />
+=======
+        app:layout_constraintBottom_toBottomOf="parent"/>
+>>>>>>> origin/master
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
