@@ -1,9 +1,11 @@
 package com.example.playmolove;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Date;
 
 
-    public class ChatMessage{
+    public class ChatMessage {
     private String messageText;
     private String messageUser;
     private long messageTime;

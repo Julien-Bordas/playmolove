@@ -17,16 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bot_nav"
-        android:layout_width="413dp"
-        android:layout_height="56dp"
-        android:background="@color/grey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bot_navigation"
-        />
 
     <ImageView
         android:id="@+id/photo"
@@ -67,6 +57,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="68dp"
+        android:text="Terminer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,12 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".MessagerieActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".CreateProfilActivity" />
+        <activity android:name=".CreateprofilActivity2" />
+        <activity android:name=".CreateProfilActivity3" />
+        <activity android:name=".CreateProfilActivity4" />
+        <activity android:name=".CreateProfilActivity5" />
+        <activity android:name=".CreateProfilActivity6" />
         <activity android:name=".ChatMessage" />
         <activity
             android:name=".loginActivity"

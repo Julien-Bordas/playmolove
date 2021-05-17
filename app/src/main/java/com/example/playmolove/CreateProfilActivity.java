@@ -1,6 +1,7 @@
 package com.example.playmolove;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CreateProfilActivity extends AppCompatActivity {
 
     String check_name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,16 +21,15 @@ public class CreateProfilActivity extends AppCompatActivity {
         button.setOnClickListener(v -> goto2());
 
 
-        EditText nameEditText = (EditText) findViewById(R.id.edit_name);
+        EditText nameEditText = findViewById(R.id.edit_name);
         check_name = nameEditText.getText().toString();
 
     }
     public void goto2() {
-        if (check_name.matches("")) {
-            Toast.makeText(this, "Le champ est vide", Toast.LENGTH_SHORT).show();
-        } else {
-            Intent intent = new Intent(this, MainActivity.class); // CreateprofilActivity2
-            CreateProfilActivity.this.startActivity(intent);
-        }
+        //if (TextUtils.isEmpty(check_name)){
+           // Toast.makeText(this, "Le champ est vide", Toast.LENGTH_SHORT).show();
+       // } else {
+            startActivity(new Intent(this, CreateprofilActivity2.class));
+        //}
     }
 }

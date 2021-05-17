@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -18,9 +19,11 @@ import org.jetbrains.annotations.NotNull;
 public class ProfilActivity extends AppCompatActivity {
 
     Button button ;
+    Button retour;
     ImageView imageView ;
     Intent intent ;
     public  static final int RequestPermissionCode  = 1 ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,9 @@ public class ProfilActivity extends AppCompatActivity {
 
         button = (Button)findViewById(R.id.button);
         imageView = (ImageView)findViewById(R.id.photo);
+        Button retour = findViewById(R.id.retour);
+        retour.setOnClickListener(v -> gotomain());
+
 
         EnableRuntimePermission();
 
@@ -69,6 +75,7 @@ public class ProfilActivity extends AppCompatActivity {
         }
     }
 
+
     @Override
     public void onRequestPermissionsResult(int RC, @NotNull String per[], @NotNull int[] PResult) {
 
@@ -84,27 +91,8 @@ public class ProfilActivity extends AppCompatActivity {
             }
         }
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.geoloc:
-                Toast.makeText(this, "Chargement de la localisation", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(this, GeolocActivity.class));
-                return true;
-            case R.id.chat:
-                Toast.makeText(this, "Chargement des messages", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(this, MessagerieActivity.class));
-                return true;
-            case R.id.find:
-                Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.profil:
-                Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+    public void gotomain() {
+        startActivity(new Intent(this, MainActivity.class));
+        //}
     }
-
 }

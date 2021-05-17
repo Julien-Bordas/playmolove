@@ -44,10 +44,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             case R.id.find:
                 Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, MatchingActivity.class));
                 return true;
             case R.id.profil:
                 Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(this, ProfilActivity.class));
+                startActivity(new Intent(this, CreateProfilActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -67,10 +68,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             case R.id.find:
                 Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, MatchingActivity.class));
                 return true;
             case R.id.profil:
                 Toast.makeText(this, "Autre menu choisi", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(this, ProfilActivity.class));
+                startActivity(new Intent(this, CreateProfilActivity.class));
                 return true;
         }
         return false;
