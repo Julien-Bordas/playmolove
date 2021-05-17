@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/photosize"
+        android:text="@string/scolarite"
+        android:textSize="@dimen/info"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/cent"/>
+
+    <EditText
+        android:id="@+id/etablissement"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/defaut"
+        android:layout_marginTop="@dimen/defaut"
+        android:autofillHints=""
+        android:hint="@string/etablissement"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job" />
+
+    <Button
+        android:id="@+id/termine"
+        android:layout_width="@dimen/wide"
+        android:layout_height="@dimen/next_height"
+        android:layout_marginBottom="@dimen/defaut"
+        android:text="@string/termine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
